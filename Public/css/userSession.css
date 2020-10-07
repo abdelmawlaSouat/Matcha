@@ -1,0 +1,575 @@
+/**
+ * Mise en forme général
+ */
+
+ body {background: #F5F5F5;height: 100vh;}
+ h1 {margin-top: 1rem; font-size: 1.5rem; font-weight: normal;}
+ h2 {font-size: 1.5rem; text-align: center;}
+ label {margin-top: 10px; color:grey;}
+.alert_div { margin-top: 2rem;}
+ .page_container { position: relative; min-height: 100vh;}
+ .content_wrap { padding-bottom: 2.5rem;}
+ form .alert {margin-top: 1rem;}
+
+ footer
+ {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 50px;
+   padding: 1rem;
+   background: white;
+   text-align:center;
+ }
+
+/**
+ * Mise en forme de la navbar
+ */
+
+ nav a:hover {text-decoration: none; border: 0;}
+ .nav_container {background: white; padding-top: 0.8rem; padding-bottom: 0.8rem;}
+ .div__user-name {margin-left: 1rem; margin-right: 1rem; font-weight: bold; color: #464545;}
+ .nav__icons-div {border-right: 1px solid black; padding-right: 1.5rem;}
+ .hidden-scrollbar {overflow:hidden; text-align:justify;}
+ .notifs_container, .messages_container
+ {
+   max-height: 450px;
+   overflow: auto;
+   margin-right: -300px;
+   padding-right: 300px;
+ }
+
+.nav__icons-notif_div { cursor: pointer; margin-left: 1rem; position: relative;}
+.notif_div em, .message_div em {color: grey; font-size: 0.8rem;}
+.dropdown_footer {border-top: 1px solid rgb(235, 235, 235);}
+.notif-counter
+ {
+   position: absolute;
+   top: -7px;
+   right: -9px;;
+   background-color: red;
+   color: white;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+   font-size: 13px;
+   text-align: center;
+ }
+
+.message_div {width: 40vh; padding-right: 0.5rem;}
+.notif_div, .message_div
+{
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+
+.dropdown-menu > span
+{
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-top: 0;
+  padding-bottom: : 0.5rem;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.div__user-info { cursor: pointer;}
+.div__user-info span
+{
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+.div__user-info:hover span { color: #ec4c4c; }
+.dropdown_avatar
+{
+  width: 80px;
+  height: 100px;
+  margin-right: 1rem;
+}
+
+.message_txt span {font-weight: bold;}
+.message_txt p  {
+  width: 200px;
+  white-space: nowrap;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+
+
+/**
+ * Mise en Forme de la page de suggestion de profils
+ */
+
+.filters_list
+{
+  background-color: white;
+  border-top: 1px solid rgb(235, 235, 235);
+  border-bottom: 1px solid rgb(235, 235, 235);
+  padding: 1rem;
+}
+
+.filters_list .dropdown button
+{
+  border : 1px solid rgb(176, 176, 176);
+  background-color: white;
+}
+.filters_list button
+{
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+}
+.filters_list .age_div, .filters_list .score_div, .filters_list .distance_div { width: 30vh; padding: 1rem;}
+.filters_list .interests_list { width: 60vh; padding: 1rem;}
+
+.profils_list { margin-top: 2rem; }
+.profil .user_info { padding: 1rem; }
+.profil .user_info img { cursor: pointer; }
+.profil
+{
+  background-color: white;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+  border: 2px solid rgb(235, 235, 235);
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.profil .icons_div
+{
+  cursor: pointer;
+  position: absolute;
+  bottom: -50px;
+  left: 18%;
+}
+
+.icons_div div
+{
+  margin: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid rgb(235, 235, 235);
+  padding: 1rem;
+  background-color: white;
+}
+
+.profil div span:first-child
+{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dropdown-menu a {margin-top: 0.5rem;}
+
+.profil div span:last-child
+{
+  font-size: 1.2rem;
+  color : #909090;
+}
+
+.profil div span:nth-child(2)
+{
+  font-size: 1.2rem;
+  color : #909090;
+}
+
+
+
+/**
+ * Mise en page de la page de recherche d'utilisateurs
+*/
+
+.sort_div label { margin-right: 1rem;}
+.profils_search .gender_form, .profils_search .orientation_form { padding-left: 1rem;}
+
+
+
+/**
+ * Mise en page de page de profil de l'utilisateur connecté
+ */
+
+.user_profil { margin-top: 2rem; margin-bottom: 2rem;}
+.user_profil h3 {font-size: 1.2rem; font-weight:600;}
+
+.user_profil header,
+.user_profil .user_interests,
+.user_profil .user_pictures
+{width: 80vh; padding: 1rem; margin-bottom: 1rem;}
+
+/* .user_profil header .user_info_1 img { border-radius: 50%;} */
+.user_profil .user_info_1 > div { width: 100%; padding-left: 2rem;}
+.user_profil .user_info_2 { width: 83vh; margin-bottom: 1rem;}
+
+.user_profil header,
+.user_profil .bio_div,
+.user_profil .user_info_3,
+.user_profil .user_interests,
+.user_profil .user_pictures
+{background-color: white;}
+
+.user_profil .user_pictures {padding: 1.5rem;}
+.user_profil .user_name {font-size: 1.8rem; font-weight: 600;}
+
+.user_profil .user_job,
+.user_profil .location
+{font-size: 1.2rem; color: grey;}
+
+.user_profil .settings_div:hover {background-color: #F5F5F5;}
+.user_profil .settings_div
+{
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid rgb(235, 235, 235);
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.user_profil .bio_div,
+.user_profil .user_info_3
+{
+  margin: 1rem;
+  margin-bottom: 0;
+  padding: 1rem;
+  width: 50%;
+}
+
+
+.user_profil .user_interests { padding: 1.5rem; }
+ .interest span { font-style: italic;}
+ .interest
+{
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border : 1px solid rgb(176, 176, 176);
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: grey;
+}
+
+.user_profil .pictures_list {margin-top: 1.5rem; margin-left: 2rem;}
+.user_profil .pictures_list img {margin-right: 1.5rem; margin-bottom: 2rem;}
+.user_profil .pictures_list div
+{
+  margin-left: 3rem;
+   border-radius: 50%;
+   border : 1px solid rgb(176, 176, 176);
+   padding: 1rem;
+ }
+
+.user_profil .pictures_list .add_img_div:hover {background-color: #F5F5F5;}
+.user_profil .pictures_list .add_img_div
+{transition-property: background-color; transition-duration: 0.5s;}
+
+/**
+ * Mise en page de page de profil d'un utilisateur
+ */
+
+ .profils_search .modal-body { padding: 0;}
+ .modal-body .user_profil {background: #F5F5F5; padding: 1rem; margin: 0;}
+ .modal-body .user_profil .user_info_2 { width: 100%; margin-bottom: 1rem;}
+
+ .modal-dialog { max-width: 70vh;}
+ .modal-body .user_profil header,
+ .modal-body .user_profil .user_interests,
+ .modal-body .user_profil .user_pictures
+ {width: 100%; padding: 1rem; margin-bottom: 1rem;}
+
+
+
+
+
+
+
+
+/**
+ * Mise en forme de la page de Paramètre de l'utilisateur
+ */
+
+.user_settings_section > div { margin-top: 2rem;}
+
+.user_settings_section .general_form .firstname
+{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.interest.checked { color: white; background-color: #ec4c4c; border: 0;}
+
+.user_settings_section .user_settings > div
+{
+  padding: 1.5rem;
+  background-color: white;
+}
+
+.user_settings_section form { width: 60vh;}
+
+.user_settings_section form > div
+{
+  margin: 1rem;
+  width: 92%;
+}
+
+.modal form {width: 100%;}
+
+.user_settings_section .file
+{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.user_settings_section .file input
+{
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
+.user_settings_section .picture_div { position: relative; }
+
+.user_settings_section .delete_img
+{
+  position: absolute;
+  right: -15px;
+  top: -15px;
+}
+
+
+.user_settings_section .pictures_list {margin-top: 2rem; width: 110%; padding: 1rem;}
+.user_settings_section .pictures_list .picture_div {margin-right: 3rem; margin-bottom: 2rem;}
+.user_settings_section .pictures_list .add_img_div
+{
+   margin-left: 3rem;
+   border-radius: 50%;
+   border : 1px solid rgb(176, 176, 176);
+   padding: 1rem;
+ }
+
+.user_settings_section .pictures_list .add_img_div:hover {background-color: #F5F5F5;}
+.user_settings_section .pictures_list .add_img_div
+{transition-property: background-color; transition-duration: 0.5s;}
+
+.user_settings_section .pictures_list .add_img {margin: 0;}
+
+#age, #score {  font-weight: 600; }
+
+.ui-slider-handle.ui-corner-all.ui-state-default
+{
+  background: #ec4c4c;
+  color: white;
+  border: 0;
+}
+ .age_div .ui-slider-handle.ui-corner-all.ui-state-default {border-radius: 50%;}
+
+.ui-widget-header { background: #ec4c4c;}
+
+.match_settings label { color: #ec4c4c; font-weight: 600; font-size: 1.1rem;}
+
+.match_settings option { text-align: center;}
+
+#distance {
+  width: 3em;
+  height: 1.6em;
+  top: 50%;
+  margin-top: -.8em;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+
+.user_settings_section .nav {border-right: 1px solid grey;}
+
+
+
+/*
+*
+*  Background et color
+*
+*/
+
+.color_red { color: #ec4c4c; }
+.color_white { color: white; }
+.bg_red { background-color: #ec4c4c; }
+/* CHAT AU PROPRE */
+
+
+.chat-container{
+  margin: auto;
+}
+.chat-container .message--div{
+  padding: 0 0 50px 0;
+}
+.chat-container .inbox--div{
+  border: 1px solid #c4c4c4;
+  clear: both;
+  overflow: hidden;
+}
+.chat-container .inbox_match{
+  background: #f8f8f8 none repeat scroll 0 0;
+  float: left;
+  overflow: hidden;
+  width: 40%;
+  border-right: 1px solid #c4c4c4;
+}
+.chat-container .inbox_chat{
+  overflow-y: scroll;
+}
+.chat-container .chat_list{
+  border-bottom: 1px solid #c4c4c4;
+  margin: 0;
+  padding: 18px 16px 10px;
+}
+.chat-container .chat_list:hover{
+  background-color: #ebebeb;
+}
+.chat-container .active_list{
+  background-color: #ebebeb;
+}
+.chat-container .match--template{
+  overflow: hidden;
+  clear: both;
+}
+.chat-container .match-img--div{
+  float: left;
+  width: 11%;
+}
+.chat-container .match--img{
+  max-width: 100%;
+  border-radius: 50%;
+}
+.chat-container .match-description--div{
+  float: left;
+  padding: 0 0 0 15px;
+  width: 88%;
+}
+.chat-container .match-description--div h5{
+  font-size: 15px;
+  color: #464646;
+  margin: 0 0 8px 0;
+}
+.chat-container .match-description--div p{
+  font-size: 14px;
+  color: #989898;
+  margin: auto;
+}
+.chat-container .chat_date--span{
+  font-size: 13px;
+  float: right;
+}
+.chat-container .inbox_message{
+  float: left;
+  padding: 30px 15px 0 25px;
+  width: 60%;
+}
+.chat-container .message_history--div{
+  overflow-y: auto;
+}
+.chat-container .incoming_msg_img--div{
+  display: inline-block;
+  width: 6%;
+}
+.chat-container .incoming_msg--img{
+  max-width: 100%;
+  border-radius: 50%;
+}
+.chat-container .received_msg--div{
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 0 0 0 10px;
+  vertical-align: top;
+  width: 92%;
+}
+.chat-container .received_msg{
+  width: 57%;
+}
+.chat-container .received_msg p{
+  background: #ebebeb none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #646464;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+}
+.chat-container .msg_time_date{
+  color:#747474;
+  visibility: hidden;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+
+.chat-container .outcoming_message--div{
+  overflow: hidden;
+  margin: 0 0 15px;
+}
+.chat-container .sent_msg--div{
+  float: right;
+  width: 46%;
+}
+.chat-container .sent_msg--div p{
+  background: #05728f none repeat scroll 0 0;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0;
+  color: #fff;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+}
+.chat-container .send_msg--div{
+  border-top: 1px solid #c4c4c4;
+  position: relative;
+}
+.chat-container .write--input{
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #4c4c4c;
+  font-size: 15px;
+  min-height: 48px;
+  width: 100%;
+}
+.chat-container .send_msg--div button{
+  background: #05728f none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 33px;
+  text-align: center;
+}
+.chat-container .input_msg--div button i{
+  margin-top: 4px;
+}
+.location-bar--div{
+  display: flex;
+  justify-content: space-around;
+}
+.location_search{
+  height: auto;
+}
+
+/* Clearable text inputs */
+.clearable{
+  background: #fff url(http://i.stack.imgur.com/mJotv.gif) no-repeat right -10px center;
+  border: 1px solid #999;
+  padding: 3px 18px 3px 4px;     /* Use the same right padding (18) in jQ! */
+  border-radius: 3px;
+  transition: background 0.4s;
+}
+.clearable.x  { background-position: right 5px center; } /* (jQ) Show icon */
+.clearable.onX{ cursor: pointer; }              /* (jQ) hover cursor style */
+.clearable::-ms-clear {display: none; width:0; height:0;} /* Remove IE default X */

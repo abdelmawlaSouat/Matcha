@@ -1,0 +1,105 @@
+/*
+*
+*  Mise en forme général
+*
+*/
+
+body {background: #F5F5F5;}
+h1 {margin-top: 1rem; font-size: 1.5rem; font-weight: normal;}
+h2 {font-size: 1.5rem; text-align: center;}
+section p {text-align: center;}
+label {margin-top: 10px; color:grey;}
+button {margin-top: 10px; margin-bottom: 10px; width: 100%; margin-top: 1.5rem;}
+.page_container { position: relative; min-height: 100vh;}
+.content_wrap { padding-bottom: 2.5rem;}
+footer
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 1rem;
+  background: white;
+  text-align:center;
+}
+
+
+ /**
+  * Message d'erreur
+  */
+
+  .accountNotConfirmed header {margin-bottom: 1rem;}
+  .accountNotConfirmed { font-size: 1.2rem; height: 80vh;}
+  .accountNotConfirmed header, .accountNotConfirmed .msg {width: 40vh; margin: 1.5rem;}
+  .accountNotConfirmed section  {background: white;}
+  .accountNotConfirmed a  {color: black;}
+  .accountNotConfirmed button {margin-top: 10px; margin-bottom: 10px; width: 100%;}
+
+
+/*
+*
+*  Mise en forme des formulaires d'Inscription et de Connexion
+*
+*/
+
+.auth_form {width: 100%; height: 91vh; padding-top: 1rem;}
+.auth_form, .name_div { margin-right: 1rem;}
+.auth_form section form {margin-bottom: 2rem;}
+.auth_form section form, .auth_form section > div {padding: 1.5rem; background: white;}
+.auth_form > header
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.name_firstname_div { display: flex;}
+
+/*
+*
+*  Mise en forme de la Fonctionnalité de Récupération du Mot de Passe
+*
+*/
+
+.recover_passwd header {margin: 1.5rem; text-align: center;}
+.recover_passwd header img {margin-bottom: 1rem;}
+.recover_passwd {width: 100%; height: 90.5vh;}
+.recover_passwd form { padding: 1.5rem; }
+.recover_passwd section {background: white; width: 40vh;}
+.recover_passwd header p {color: grey;}
+.recover_passwd a { color : black;}
+.back_to_home_div {
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #dee0e3;
+  width: 100%;
+  background: #F5F5F5;
+}
+
+/*
+*
+*  Mise en forme aux autres formats d'écrans
+*
+*/
+
+@media screen and (max-width: 450px)
+{
+  body {font-size: 15px; margin-top: 5vh;}
+  h1 {font-size: 20px; margin-left: 1rem; margin-top: 0;}
+
+  /* .auth_form section div {padding: 0.8rem;} */
+  .auth_form header img { width: 40px; height: 40px; }
+  .auth_form header { flex-direction: row; align-items: center; }
+  .name_firstname_div { display: flex; flex-direction: column; padding: 0;}
+  .name_div { margin: 0;}
+}
+
+/*
+*
+*  Background et color
+*
+*/
+
+.color_red { color: #ec4c4c; }
+.color_white { color: white; }
+.bg_red { background-color: #ec4c4c; }
